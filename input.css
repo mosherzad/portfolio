@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+.active-menu-container {
+  @apply max-h-100;
+  @apply opacity-100;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+.project-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.project-container {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}

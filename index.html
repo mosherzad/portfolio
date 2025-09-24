@@ -121,16 +121,22 @@
         </div>
       </div>
       <div
-        class="profile-container flex items-center justify-around mx-15 my-3 gap-15 max-md:flex-col"
+        class="profile-container flex lg:flex-row items-center justify-center -translate-y-8 mx-15 my-3 gap-x-100 flex-col"
       >
-        <div class="profile-image -ml-18 max-md:ml-3">
-          <div
+        <div
+          class="profile-image -ml-18 max-md:ml-3 w-[420px] h-[420px] lg:w-[500px] lg:h-[500px] max-sm:mb-15"
+        >
+          <!-- <div
             id="lottie-animation"
             class="w-180 mx-auto ml-2 max-md:w-100"
-          ></div>
+          ></div> -->
+          <img
+            src="./assets/IMG_3297-removebg-preview.png"
+            class="w-full h-full object-cover mx-auto ml-2 rounded-full"
+          />
         </div>
         <div
-          class="text-center -translate-y-10 -translate-x-60 max-md:translate-x-0 max-md:-translate-y-30"
+          class="text-center -translate-y-5 -translate-x-60 max-md:translate-x-0 max-md:-translate-y-30 lg:mt-35 max-md:mt-13"
         >
           <div class="personal-info flex flex-col max-md:mt-10">
             <p class="text-gray-600 text-2xl dark:text-gray-400">Hi, I'm</p>
@@ -148,7 +154,7 @@
           <div class="cv-btn flex justify-center gap-6">
             <button
               class="cv-btn p-[1rem] w-39 rounded-[2rem] font-semibold border-2 border-[rgb(53,53,53)] cursor-pointer transition-all duration-200 hover:bg-gray-800 hover:text-gray-50 hover:border-white dark:bg-gray-100"
-              onclick="window.open('./assets/MohammedSherzadCV.pdf')"
+              onclick="window.open('./assets/MohammedSherzad-CV.pdf')"
             >
               Download CV
             </button>
@@ -183,7 +189,10 @@
       </div>
     </div>
 
-    <div id="about" class="about-me h-screen w-screen dark:bg-gray-900">
+    <div
+      id="about"
+      class="about-me min-h-screen w-screen dark:bg-gray-900 py-20 max-sm:mt-[100px]"
+    >
       <div
         class="text text-center translate-y-10 max-sm:translate-y-30"
         data-aos="fade-up"
@@ -233,98 +242,110 @@
 
     <div
       id="experience"
-      class="experience h-screen w-screen dark: dark:bg-gray-900 max-sm:mt-40"
+      class="experience min-h-screen w-screen dark: dark:bg-gray-900 max-sm:mt-30 py-10"
     >
-      <div
-        class="text text-center translate-y-20 max-sm:translate-y-60"
-        data-aos="fade-up"
-      >
+      <div class="text text-center max-sm:translate-y-60" data-aos="fade-up">
         <p class="text-gray-700 text-[1.1rem] dark:text-gray-400">Explore Me</p>
         <h1 class="text-5xl font-semibold max-sm:text-3xl dark:text-gray-50">
-          Experience
+          My Skills
         </h1>
       </div>
-      <div class="flex justify-around mt-50 max-sm:mt-80 translate-x-1">
-        <div class="grid lg:grid-cols-4 grid-cols-3 gap-x-10 gap-y-15">
+      <div class="flex justify-around mt-20 max-sm:mt-40">
+        <div
+          class="grid lg:grid-cols-4 grid-cols-3 gap-x-10 gap-y-10 max-sm:mt-30"
+        >
           <div
-            class="bg-white flex items-center justify-center lg:w-30 lg:h-30 max-sm:w-25 max-sm:h-25 rounded-full"
+            class="bg-white flex items-center justify-center w-[120px] h-[120px] max-sm:w-[100px] max-sm:h-[100px] rounded-full shadow"
           >
             <img
               src="assets/html.png"
-              class="w-25 h-25 object-contain max-sm:w-20 max-sm:h-20"
+              class="w-[100px] h-[100px] object-contain max-sm:w-[80px] max-sm:h-[80px]"
             />
           </div>
           <div
-            class="bg-white flex items-center justify-center w-30 h-30 max-sm:w-25 max-sm:h-25 rounded-full"
+            class="bg-white flex items-center justify-center w-[120px] h-[120px] max-sm:w-[100px] max-sm:h-[100px] rounded-full shadow"
           >
             <img
               src="assets/css.png"
-              class="w-25 h-25 object-contain max-sm:w-20 max-sm:h-20"
+              class="w-[100px] h-[100px] object-contain max-sm:w-[80px] max-sm:h-[80px]"
             />
           </div>
           <div
-            class="bg-white flex items-center justify-center w-30 h-30 max-sm:w-25 max-sm:h-25 rounded-full"
-          >
-            <img
-              src="assets/reactjs.png"
-              class="w-25 h-25 object-contain max-sm:w-20 max-sm:h-20"
-            />
-          </div>
-          <div
-            class="bg-white flex items-center justify-center w-30 h-30 max-sm:w-25 max-sm:h-25 rounded-full"
+            class="bg-white flex items-center justify-center w-[120px] h-[120px] max-sm:w-[100px] max-sm:h-[100px] rounded-full shadow"
           >
             <img
               src="assets/javascript.png"
-              class="w-25 h-25 object-contain max-sm:w-20 max-sm:h-20"
+              class="w-[100px] h-[100px] object-contain max-sm:w-[80px] max-sm:h-[80px]"
             />
           </div>
           <div
-            class="bg-white flex items-center justify-center w-30 h-30 max-sm:w-25 max-sm:h-25 rounded-full"
+            class="bg-white flex items-center justify-center w-[120px] h-[120px] max-sm:w-[100px] max-sm:h-[100px] rounded-full shadow"
           >
             <img
-              src="assets/api.png"
-              class="w-25 h-25 object-contain max-sm:w-20 max-sm:h-20"
+              src="assets/atom_12257161.png"
+              class="w-[100px] h-[100px] object-contain max-sm:w-[80px] max-sm:h-[80px]"
             />
           </div>
           <div
-            class="bg-white flex items-center justify-center w-30 h-30 max-sm:w-25 max-sm:h-25 rounded-full"
-          >
-            <img
-              src="assets/tailwind.png"
-              class="w-25 h-25 object-contain max-sm:w-20 max-sm:h-20"
-            />
-          </div>
-          <div
-            class="bg-white flex items-center justify-center w-30 h-30 max-sm:w-25 max-sm:h-25 rounded-full"
+            class="bg-white flex items-center justify-center w-[120px] h-[120px] max-sm:w-[100px] max-sm:h-[100px] rounded-full shadow"
           >
             <img
               src="assets/redux.png"
-              class="w-25 h-25 object-contain max-sm:w-20 max-sm:h-20"
+              class="w-[100px] h-[100px] object-contain max-sm:w-[80px] max-sm:h-[80px]"
             />
           </div>
           <div
-            class="bg-white flex items-center justify-center w-30 h-30 max-sm:w-25 max-sm:h-25 rounded-full"
+            class="bg-white flex items-center justify-center w-[120px] h-[120px] max-sm:w-[100px] max-sm:h-[100px] rounded-full shadow"
+          >
+            <img
+              src="assets/api.png"
+              class="w-[100px] h-[100px] object-contain max-sm:w-[80px] max-sm:h-[80px]"
+            />
+          </div>
+          <div
+            class="bg-white flex items-center justify-center w-[120px] h-[120px] max-sm:w-[100px] max-sm:h-[100px] rounded-full shadow"
+          >
+            <img
+              src="assets/tailwind.png"
+              class="w-[100px] h-[100px] object-contain max-sm:w-[80px] max-sm:h-[80px]"
+            />
+          </div>
+          <div
+            class="bg-white flex items-center justify-center w-[120px] h-[120px] max-sm:w-[100px] max-sm:h-[100px] rounded-full shadow"
           >
             <img
               src="assets/git.png"
-              class="w-25 h-25 object-contain max-sm:w-20 max-sm:h-20"
+              class="w-[100px] h-[100px] object-contain max-sm:w-[80px] max-sm:h-[80px]"
             />
           </div>
           <div
-            class="bg-white flex items-center justify-center w-30 h-30 max-sm:w-25 max-sm:h-25 rounded-full"
+            class="bg-white flex items-center justify-center w-[120px] h-[120px] max-sm:w-[100px] max-sm:h-[100px] rounded-full shadow"
+          >
+            <img
+              src="assets/sql-server_5815478.png"
+              class="w-[86px] h-[86px] object-contain max-sm:w-[73px] max-sm:h-[73px]"
+            />
+          </div>
+          <div
+            class="bg-white flex items-center justify-center w-[120px] h-[120px] max-sm:w-[100px] max-sm:h-[100px] rounded-full shadow"
           >
             <img
               src="assets/material-ui.png"
-              class="w-25 h-25 object-contain max-sm:w-20 max-sm:h-20"
+              class="w-[100px] h-[100px] object-contain max-sm:w-[80px] max-sm:h-[80px]"
             />
           </div>
+
+          <!-- Repeat same structure for other icons -->
         </div>
       </div>
     </div>
 
-    <div id="projects" class="projects w-full dark:bg-gray-900">
+    <div
+      id="projects"
+      class="projects w-full dark:bg-gray-900 min-h-screen mt-30 py-5"
+    >
       <div
-        class="text text-center mb-20 max-sm:translate-y-120 reveal"
+        class="text text-center mb-20 max-sm:translate-y-30 reveal"
         data-aos="fade-up"
       >
         <p class="text-gray-700 text-[1.1rem] mb-2 dark:text-gray-400">
@@ -335,10 +356,10 @@
         </h1>
       </div>
       <div
-        class="project-container flex ml-15 gap-x-10 items-center overflow-x-auto scrollbar-hide px-4 max-sm:mt-135 max-sm:ml-2"
+        class="project-container flex ml-15 gap-x-10 items-center overflow-x-auto scrollbar-hide px-4 max-sm:mt-40 max-sm:ml-2 transition-all duration-300"
       >
         <div
-          class="project flex flex-col border-1 shadow-2xl border-black p-5 bg-gray-50 shrink-0 w-100 rounded-[20px] max-sm:w-80 dark:bg-gray-900 dark:border-gray-600"
+          class="project flex flex-col border-1 transition-all duration-200 hover:shadow-2xl max-w-[400px] border-black p-5 bg-gray-50 shrink-0 rounded-[20px] max-sm:w-80 dark:bg-gray-900 dark:border-gray-600"
           data-aos="fade-up"
         >
           <img
@@ -389,7 +410,110 @@
           </div>
         </div>
         <div
-          class="project flex flex-col border-1 shadow-2xl border-black p-5 bg-gray-50 shrink-0 w-100 rounded-[20px] max-sm:w-80 dark:bg-gray-900 dark:border-gray-600"
+          class="project flex flex-col border-1 transition-all duration-200 hover:shadow-2xl max-w-[400px] border-black p-5 bg-gray-50 shrink-0 rounded-[20px] max-sm:w-80 dark:bg-gray-900 dark:border-gray-600"
+          data-aos="fade-up"
+        >
+          <img
+            src="./assets/movierev.png"
+            class="w-100 border-1 rounded-[10px] max-sm:w-80 dark:border-gray-600"
+            alt=""
+          />
+          <h3
+            class="text-2xl font-semibold dark:text-gray-100 mt-2 max-sm:text-[20px]"
+          >
+            Movies&TV Review
+          </h3>
+          <div class="mt-2 flex items-center justify-around -translate-x-2">
+            <span
+              class="p-1 border-1 rounded-[50px] text-[0.8rem] dark:text-gray-400 max-sm:text-[0.6rem]"
+              >React Js</span
+            >
+            <span
+              class="p-1 border-1 rounded-[50px] text-[0.8rem] dark:text-gray-400 max-sm:text-[0.6rem]"
+              >Tailwind</span
+            >
+            <span
+              class="p-1 border-1 rounded-[50px] text-[0.8rem] dark:text-gray-400 max-sm:text-[0.6rem]"
+              >API integration</span
+            >
+          </div>
+          <p
+            class="w-[95%] text-justify text-[0.7rem] mt-3 text-gray-600 dark:text-gray-400 max-sm:text-[0.6rem]"
+          >
+            Developed a fully responsive Movies & TV Reviews web application
+            using React.js, Redux Toolkit and Tailwind CSS, integrated with a
+            REST API. Features include search functionality, trailers, and
+            detailed cast information, providing a seamless and engaging user
+            experience across all devices
+          </p>
+          <div class="flex items-center justify-between">
+            <a
+              href="https://mohammed-movie-tvv-review.vercel.app/"
+              class="mt-5 border-1 border-black rounded-[50px] text-[15px] transition-all duration-200 p-1 w-30 text-center hover:bg-gray-800 hover:text-gray-50 font-semibold dark:bg-white dark:text-black"
+            >
+              Live Demo</a
+            >
+            <a
+              href="https://github.com/mosherzad/movie-tv-app"
+              class="mt-5 border-1 border-black rounded-[50px] text-[15px] transition-all duration-200 p-1 w-30 text-center hover:bg-gray-800 hover:text-gray-50 font-semibold dark:bg-white dark:text-black"
+            >
+              Github</a
+            >
+          </div>
+        </div>
+        <div
+          class="project flex flex-col border-1 transition-all duration-200 hover:shadow-2xl max-w-[400px] border-black p-5 bg-gray-50 shrink-0 rounded-[20px] max-sm:w-80 dark:bg-gray-900 dark:border-gray-600"
+          data-aos="fade-up"
+        >
+          <img
+            src="./assets/food-recipes.png"
+            class="w-100 border-1 rounded-[10px] max-sm:w-80 dark:border-gray-600"
+            alt=""
+          />
+          <h3
+            class="text-2xl font-semibold dark:text-gray-100 mt-2 max-sm:text-[20px]"
+          >
+            Food Recipes
+          </h3>
+          <div class="mt-2 flex items-center justify-around -translate-x-2">
+            <span
+              class="p-1 border-1 rounded-[50px] text-[0.8rem] dark:text-gray-400 max-sm:text-[0.6rem]"
+              >React Js</span
+            >
+            <span
+              class="p-1 border-1 rounded-[50px] text-[0.8rem] dark:text-gray-400 max-sm:text-[0.6rem]"
+              >Tailwind</span
+            >
+            <span
+              class="p-1 border-1 rounded-[50px] text-[0.8rem] dark:text-gray-400 max-sm:text-[0.6rem]"
+              >API integration</span
+            >
+          </div>
+          <p
+            class="w-[95%] text-justify text-[0.7rem] mt-3 text-gray-600 dark:text-gray-400 max-sm:text-[0.6rem]"
+          >
+            A Food Recipes web app built with React.js and Tailwind CSS,
+            fetching data from a REST API. Users can search recipes, explore
+            categories, and view detailed meal information. Fully responsive
+            with a modern, interactive design.
+          </p>
+          <div class="flex items-center justify-between">
+            <a
+              href="https://food-recipes-mohammed.vercel.app/"
+              class="mt-5 border-1 border-black rounded-[50px] text-[15px] transition-all duration-200 p-1 w-30 text-center hover:bg-gray-800 hover:text-gray-50 font-semibold dark:bg-white dark:text-black"
+            >
+              Live Demo</a
+            >
+            <a
+              href="https://github.com/mosherzad/food-recipes"
+              class="mt-5 border-1 border-black rounded-[50px] text-[15px] transition-all duration-200 p-1 w-30 text-center hover:bg-gray-800 hover:text-gray-50 font-semibold dark:bg-white dark:text-black"
+            >
+              Github</a
+            >
+          </div>
+        </div>
+        <div
+          class="project flex flex-col border-1 transition-all duration-200 hover:shadow-2xl max-w-[400px] border-black p-5 bg-gray-50 shrink-0 rounded-[20px] max-sm:w-80 dark:bg-gray-900 dark:border-gray-600"
           data-aos="fade-up"
         >
           <img
@@ -444,57 +568,7 @@
           </div>
         </div>
         <div
-          class="project flex flex-col border-1 border-black p-5 shadow-2xl bg-gray-50 w-100 shrink-0 rounded-[20px] max-sm:w-80 dark:bg-gray-900 dark:border-gray-600 dark:shadow-2xl"
-          data-aos="fade-up"
-        >
-          <img
-            src="./assets/portfolio.png"
-            class="w-100 border-1 rounded-[10px] max-sm:w-80 dark:border-gray-600"
-            alt=""
-          />
-          <h3
-            class="text-2xl font-semibold max-sm:text-1xl dark:text-gray-100 mt-2 max-sm:text-[20px]"
-          >
-            Portfolio Website
-          </h3>
-          <div class="mt-2 flex items-center justify-around -translate-x-3">
-            <span
-              class="p-1 border-1 rounded-[50px] text-[0.8rem] dark:text-gray-400 max-sm:text-[0.6rem]"
-              >HTML</span
-            >
-            <span
-              class="p-1 border-1 rounded-[50px] text-[0.8rem] dark:text-gray-400 max-sm:text-[0.6rem]"
-              >Tailwind CSS</span
-            >
-            <span
-              class="p-1 border-1 rounded-[50px] text-[0.8rem] dark:text-gray-400 max-sm:text-[0.6rem]"
-              >JavaScript</span
-            >
-          </div>
-          <p
-            class="w-[95%] text-justify text-[0.7rem] mt-3 text-gray-600 dark:text-gray-400 max-sm:text-[0.6rem]"
-          >
-            Portfolio website built with HTML, Tailwind CSS, and JavaScript.
-            Fully responsive, supports light/dark mode, and showcases my web
-            development skills and projects.
-          </p>
-          <div class="flex items-center justify-between">
-            <a
-              href="#home"
-              class="mt-5 border-1 border-black rounded-[50px] text-[15px] transition-all duration-200 p-1 w-30 text-center hover:bg-gray-800 hover:text-gray-50 font-semibold dark:bg-white dark:text-black"
-            >
-              Live Demo</a
-            >
-            <a
-              href="https://github.com/mosherzad/portfolio.git"
-              class="mt-5 border-1 border-black rounded-[50px] text-[15px] transition-all duration-200 p-1 w-30 text-center hover:bg-gray-800 hover:text-gray-50 font-semibold dark:bg-white dark:text-black"
-            >
-              Github</a
-            >
-          </div>
-        </div>
-        <div
-          class="project flex flex-col border-1 shadow-2xl border-black p-5 bg-gray-50 w-100 shrink-0 rounded-[20px] max-sm:w-80 dark:bg-gray-900 dark:border-gray-600"
+          class="project flex flex-col border-1 transition-all duration-200 hover:shadow-2xl max-w-[400px] border-black p-5 bg-gray-50 shrink-0 rounded-[20px] max-sm:w-80 dark:bg-gray-900 dark:border-gray-600"
           data-aos="fade-up"
         >
           <img
@@ -545,12 +619,12 @@
         </div>
       </div>
     </div>
-    <div id="contact" class="footer dark:bg-gray-900 max-sm:mt-40">
+    <div id="contact" class="footer dark:bg-gray-900">
       <div
         class="footer-container flex flex-col items-center"
         data-aos="fade-up"
       >
-        <div class="text text-center translate-y-30">
+        <div class="text text-center translate-y-7">
           <p class="text-gray-700 text-[1.1rem] mb-2 dark:text-gray-50">
             Get in Touch
           </p>
@@ -558,7 +632,7 @@
             Contact Me
           </h1>
         </div>
-        <div class="form mt-40">
+        <div class="form mt-30">
           <form
             action="https://formsubmit.co/mosherzad6@gmail.com"
             method="POST"
